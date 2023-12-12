@@ -1,9 +1,11 @@
+""" Api flask """
 from flask import Flask, request, redirect
 
 app = Flask(__name__)
 @app.route("/pizza", methods = ['POST'])
 
 def get_data():
+    """Obtener datos """
     nombre = request.form.get("p1")
     apellido = request.form.get("p2")
 
